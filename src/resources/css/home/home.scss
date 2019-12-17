@@ -1,0 +1,57 @@
+.top-img-home {
+  background: url('../img/home/pins-on-board.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 34rem;
+}
+
+.home-strike {
+  background-color: $warm-grey;
+  width: 97px;
+  height: 10px;
+  position: relative;
+  top: 27px;
+  left: -57px;
+}
+
+.trusted-by-section {
+  padding: 60px 0 90px 0;
+  text-align: center;
+}
+
+.trusted-by-header {
+  margin-bottom: 4rem !important;
+}
+
+@media screen and (min-width: 1088px) {
+  .home-sub-section {
+    //padding: 5rem 0 10rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-img-home {
+    background: url('../img/home/pins-on-board.jpg') no-repeat 0 -60px;
+    min-height: 20rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .home-strike {
+    top: -12px;
+    left: -50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home-strike {
+    top: -12px;
+    left: -17px;
+  }
+  .top-img-home {
+    min-height: 14rem;
+  }
+}

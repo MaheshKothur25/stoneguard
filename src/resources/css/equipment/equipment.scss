@@ -1,0 +1,42 @@
+.top-img-equipment {
+  background: url('../img/equipment/motherboard.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 30rem;
+}
+.no-products-found {
+  margin: 16rem 0 8rem;
+}
+.featured-product-section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .inventory-select {
+    float: right;
+    margin-top: 1rem;
+  }
+  #filter-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-img-equipment {
+    //background: url('../img/equipment/motherboard.jpg') no-repeat -330px -160px fixed;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    //background-size: cover;
+    min-height: 25rem;
+  }
+  #filter-text {
+    display: block;
+  }
+  .inventory-select {
+    margin-top: -1rem;
+  }
+}

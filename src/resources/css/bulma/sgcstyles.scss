@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700,800&display=swap');
+@import "../global-variables";
+
+
+// Update Bulma's global variables
+$grey-dark: $darker-grey;
+$grey-light: $very-light-grey-three;
+$primary: $dark-grey-blue;
+$link: $dark-grey-blue;
+$info: $grey-blue;
+$warning: $warm-grey;
+$success: $gunmetal;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $white-two;
+$control-border-width: 2px;
+$input-border-color: $gunmetal;
+$input-shadow: none;
+
+// nav
+$navbar-background-color: $dark-grey-blue;
+$navbar-item-color: $white;
+$navbar-tab-active-color: $white;
+$navbar-tab-active-border-bottom-color: $warm-grey;
+$navbar-item-hover-color: $pale-teal;
+$navbar-height: 6rem;
+$navbar-item-img-max-height: 4rem;
+
+// text
+$title-size: 3rem;
+.title.is-1, .title.is-2 {
+  font-family: $family-serif;
+}
+
+.blue-text {
+  color: $dark-grey-blue;
+}
+
+.brown-text {
+  color: $warm-grey
+}
+
+// button
+.button.is-rounded {
+  height: 45px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.transparent-bg-button {
+  background-color: transparent !important;
+  color: $white-two !important;
+}
+$button-border-color: $white-two;
+.button:focus:not(:active), .input:active {
+  box-shadow: none;
+}
+
+.title {
+  line-height: 1.42 !important;
+}
+
+// input
+//$control-border-width: 1px;
+//$control-radius: 0;
+//$control-padding-vertical: 1.5rem;
+//$control-padding-horizontal: 1.3rem;
+
+@import "~bulma/bulma.sass";

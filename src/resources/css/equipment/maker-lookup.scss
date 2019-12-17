@@ -1,0 +1,134 @@
+#abc-menu {
+  background-color: $warm-grey;
+  width: 32px;
+  position: fixed;
+  height: 100%;
+  z-index: 9;
+
+  ul {
+    height: 100%;
+    padding-bottom: 7rem;
+    overflow: auto;
+  }
+
+  .menu-list a:hover {
+    color: $warm-grey !important;
+  }
+}
+#maker-menu {
+  background-color: #fcfbf3;
+  position: relative;
+  max-width: 29%;
+  left: 32px;
+  padding: 2rem 1rem;
+  min-height: 830px;
+
+  .menu-list li.is-active {
+    margin-left: -42px;
+    padding-left: 42px;
+    border-radius: 100px;
+    display: inline-flex;
+    background-color: rgba(161, 143, 123, 0.6);
+  }
+
+  .menu-list a:hover {
+    margin-left: -42px;
+    padding-left: 42px;
+    border-radius: 100px;
+    color: $darker-grey;
+    background-color: rgba(161, 143, 123, 0.2);
+  }
+
+  .menu-list a.is-active {
+    background-color: transparent;
+    display: inline;
+    color: $darker-grey;
+  }
+
+  .menu-list a {
+    padding: 0.5em 0.75em 0.5em 0;
+  }
+}
+.maker-search-strike {
+  background-color: $warm-grey;
+  width: 90.2%;
+  height: 2px;
+  position: relative;
+  right: -13%;
+  top: 1rem;
+}
+.letter-header {
+  margin: 1rem 0 !important;
+}
+.alphabet-letter {
+  text-transform: uppercase;
+  color: $white !important;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  height: 100%;
+  overflow: auto;
+  font-size: 14px;
+  padding: 0.4em 0.75em !important;
+}
+#maker-products {
+  left: 30%;
+  top: 6rem;
+  position: absolute;
+}
+#maker-products-container {
+  position: fixed;
+  overflow: scroll;
+  height: 100%;
+  margin-bottom: 21rem;
+  padding-bottom: 27rem;
+  padding-top: 2rem;
+  width: 72%;
+}
+#back-to-search-link {
+  color: $darker-grey;
+  font-size: .85rem;
+  margin-left: 4px;
+  top: -4px;
+  position: relative;
+}
+#maker-search-input {
+  font-size: 1rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid $gunmetal;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+#clear-search-button {
+  position: absolute;
+  background: transparent;
+  right: 9px;
+  top: 5px;
+  color: #444;
+  z-index: 9;
+
+  &:hover {
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #maker-menu {
+    max-width: 91%;
+    overflow-x: hidden;
+  }
+  #maker-products {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  #maker-products-container {
+    position: relative;
+    overflow: scroll;
+    height: 100%;
+    padding-bottom: 9rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+}

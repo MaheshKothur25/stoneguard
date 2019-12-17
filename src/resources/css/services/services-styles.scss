@@ -1,0 +1,184 @@
+.top-img-services {
+  background: url('../img/services/motherboard.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 34rem;
+}
+.top-img-container {
+  min-height: 6rem;
+  position: relative;
+  //margin-top: 6rem;
+}
+.top-img-services-subpage {
+  background: url('../img/services/services-header.jpg') no-repeat center 96px fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  min-height: 24rem;
+}
+.subPageTitle {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+.services-strike-1 {
+  background-color: $grey-blue;
+  width: 10px;
+  height: 154px;
+  position: relative;
+  right: 5px;
+  margin-top: -3rem;
+}
+.services-strike-2 {
+  background-color: $warm-grey;
+  width: 175px;
+  height: 10px;
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: 0.5rem;
+}
+.services-strike-3 {
+  background-color: $warm-grey;
+  width: 105px;
+  height: 10px;
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: -3rem;
+}
+.services-strike-4 {
+  background-color: $warm-grey;
+  width: 10px;
+  height: 105px;
+  position: absolute;
+  right: 8%;
+  margin-top: -4rem;
+}
+.hero-tile-box {
+  max-width: 46%;
+  position: absolute;
+  bottom: 4rem;
+  right: 7rem;
+
+  .title.is-2 {
+    color: $warm-grey;
+    max-width: 90%;
+    padding-bottom: 1.5rem;
+  }
+}
+.hero-child-box {
+  padding: 1.5rem !important;
+  border-radius: 0;
+}
+.section-padding-bottom {
+  padding-bottom: 3rem;
+}
+
+.services-second-container {
+  color: $dark-grey;
+  margin-top: 4rem !important;
+
+  .column {
+    padding: 0.75rem 1.75rem;
+  }
+}
+.last-section-services {
+  margin-bottom: 2rem;
+}
+.services-find-tools {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  margin-top: 6rem;
+}
+
+.three-col-img-txt {
+  margin-bottom: 1.5rem;
+}
+#additional-services {
+  padding: 2rem 0 4rem !important;
+}
+.services-column-group {
+  margin-top: 2rem;
+}
+.diamond {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: $warm-grey;
+  position: relative;
+  top: -28px;
+  margin: 1rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 49px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $warm-grey;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sub-container {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .hero-tile-box {
+    max-width: 75%;
+  }
+  .services-strike-4 {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-img-services {
+    background: url('../img/services/motherboard.jpg') no-repeat 0 -135px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 19rem;
+  }
+  .our-strive-mobile {
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+  }
+  .services-strike-1 {
+    display: none;
+  }
+  .services-strike-2 {
+    margin-top: -2.5rem;
+  }
+  .services-strike-4 {
+    right: 8%;
+  }
+  .services-second-container {
+    margin-top: -2rem;
+  }
+  #sell-tools-section {
+    padding: 2rem 0 3rem !important;
+  }
+  #find-tools-section {
+    padding: 0 0 6rem !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .services-strike-2 {
+    width: 105px;
+    margin-top: -2rem;
+  }
+  .services-strike-3 {
+    width: 75px;
+    margin-top: -2rem;
+  }
+}

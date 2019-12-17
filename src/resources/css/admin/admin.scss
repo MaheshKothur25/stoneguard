@@ -1,0 +1,89 @@
+@import "../global-variables";
+
+.admin-section {
+  margin-bottom: 3rem;
+}
+.img-admin-table {
+  padding: 0 1.3rem;
+  cursor: pointer;
+}
+.progress-container {
+  position: fixed;
+  top: 11rem;
+  z-index: 99999;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  width: 100%;
+}
+.crop-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+}
+.css-bdjl4r {
+  z-index: 999999;
+}
+.pagination {
+  margin-top: 5rem;
+}
+.top-admin-bg {
+  background: $pale-teal no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 20rem;
+}
+.top-admin-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+.csv-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.pagination-list {
+  margin-top: 1rem;
+}
+.top-admin-search-container {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.mailbox-container {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.right-tag {
+  margin-left: auto;
+  order: 2;
+}
+.cms-image-container {
+  max-width: 75%;
+}
+.cms-img {
+  cursor: pointer;
+}
+.cms-content {
+  width: 80%;
+  float: right;
+  position: absolute;
+  right: 0;
+  padding: 1rem 4rem;
+}
+.cms-menu {
+  width: 20%;
+  float: left;
+  position: fixed;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  min-height: 100%;
+  top: 96px;
+}

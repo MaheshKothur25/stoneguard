@@ -1,0 +1,131 @@
+.top-img-about {
+  background: url('../img/about-us/board-meeting.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 34rem;
+}
+.hero-tile-box-about {
+  max-width: 39%;
+  position: absolute;
+  bottom: 4rem;
+  right: 6rem;
+
+  .title.is-2 {
+    color: $warm-grey;
+    max-width: 90%;
+    padding-bottom: 1.5rem;
+  }
+}
+.our-vision-subtitle {
+  max-width: 88%;
+}
+.about-us-strike-1 {
+  background-color: $grey-blue;
+  width: 28%;
+  height: 10px;
+  position: absolute;
+  top: -20px;
+  right: 0.75rem;
+}
+.about-us-strike-2 {
+  background-color: $warm-grey;
+  width: 10px;
+  height: 260px;
+  position: absolute;
+  top: -17px;
+  left: 6%;
+  z-index: 9;
+}
+
+@media screen and (min-width: 1088px) {
+  .hero-tile-box-about {
+    max-width: 39%;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .hero-tile-box-about {
+    max-width: 75%;
+  }
+  .about-us-strike-2 {
+    left: 5%;
+  }
+  .our-vision-subtitle {
+    max-width: 100%;
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-img-about {
+    background: url('../img/about-us/board-meeting.jpg') no-repeat 0 -60px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 21rem;
+    position: relative;
+  }
+  .our-vision-subtitle {
+    max-width: 100%;
+  }
+  .about-mobile {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about-us-strike-2 {
+    left: 7.5%;
+  }
+  .about-us-strike-1 {
+    width: 17%;
+    position: absolute;
+    top: 43%;
+    right: 0;
+  }
+  .our-vision-subtitle {
+    margin-left: 2rem;
+  }
+  #map-section {
+    padding: 0 0 2rem !important;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 530px) {
+  .about-mobile {
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  //.top-img-about {
+  //  -webkit-background-size: contain;
+  //  -moz-background-size: contain;
+  //  -o-background-size: contain;
+  //  background-size: contain;
+  //  min-height: 17rem;
+  //}
+  .about-mobile {
+    margin-top: -2.5rem;
+  }
+  .our-vision-subtitle {
+    margin-left: 0;
+  }
+  .about-us-strike-1 {
+    position: absolute;
+    top: 38%;
+    right: 0;
+  }
+  .about-us-strike-2 {
+    top: 94%;
+    height: 94px;
+    width: 5px;
+  }
+  #our-vision-section {
+    padding: 0 0 3rem !important;
+  }
+  #map-section {
+    padding: 0 0 1.5rem !important;
+  }
+}

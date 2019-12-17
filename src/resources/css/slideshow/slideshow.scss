@@ -1,0 +1,191 @@
+@import "../global-variables";
+
+// Slideshow
+.slideshow {
+  width: 100%;
+  background: transparent;
+  position: relative;
+}
+.slideshow-quote {
+  min-height: 300px;
+}
+.slideshow-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .reverse-row-order {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+}
+.slideshow-slides .inactive {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: 0;
+  padding: 0;
+  transition: .2s;
+  opacity: 0;
+  display: none;
+}
+.slideshow-slides .active {
+  opacity: 1;
+}
+
+.slideshow-dots {
+  list-style: none;
+}
+.slideshow-dots li {
+  margin: 0;
+  padding: 0;
+}
+.slideshow-dots a {
+  cursor: pointer;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 10px;
+  text-indent: -9990px;
+  opacity: .5;
+  transition: .3s;
+
+  &.light {
+    border: 2px solid $grey-blue;
+  }
+
+  &.dark {
+    border: 2px solid $dark-grey-blue;
+  }
+}
+.slideshow-dots li.active a {
+  opacity: 1;
+
+  &.light {
+    background: $grey-blue;
+  }
+
+  &.dark {
+    background: $dark-grey-blue;
+  }
+}
+.quote-img {
+  width: 100px;
+  height: 100px;
+}
+.rounded-img {
+  border-radius: 50%;
+}
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 14px;
+}
+.quote-columns {
+  //padding-top: 3rem;
+}
+.quote-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.quote-right-box, .quote-left-box {
+  //width: 300px;
+  margin: 5px;
+}
+.quote-left-box {
+  text-align: center;
+  margin-right: -3rem;
+}
+.quote-right-box {
+  text-align: left;
+  margin-left: -3rem;
+}
+.full-quote {
+  font-size: 14px;
+}
+.quote-quotes {
+  color: $dark-grey-blue;
+  font-family: $family-serif;
+  font-size: 2.7rem;
+  position: relative;
+}
+.quote-right {
+  vertical-align: bottom;
+  top: 47px;
+  right: 18px;
+}
+.quote-left {
+  vertical-align: bottom;
+  position: relative;
+  line-height: 0;
+}
+
+@media screen and (min-width: 1088px) {
+  .slideshow {
+    //height: 330px !important;
+    display: flex;
+    align-items: center;
+  }
+  .slideshow-left {
+    justify-content: flex-start;
+  }
+  .slideshow-right {
+    justify-content: flex-end;
+  }
+  .slideshow-dots-quote {
+    position: relative;
+    //left: 25%;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .slideshow-dots {
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .slideshow-dots li {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .slideshow-text {
+    //height: 345px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow {
+    .reverse-row-order {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+  .slideshow-text {
+    min-height: 625px;
+  }
+  .slideshow-quote {
+    min-height: 415px;
+  }
+  .quote-right-box, .quote-left-box {
+    margin: 0;
+  }
+  .quote-right-box {
+    position: relative;
+    top: -4rem;
+    padding: 1rem 2rem;
+  }
+  .quote-left-box {
+    padding-top: 4rem;
+  }
+  .quote-columns {
+    padding-top: 0;
+  }
+}
